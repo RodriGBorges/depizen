@@ -2,17 +2,22 @@ import React from 'react';
 import ListaProductos from './components/listaProductos';
 import Botones from './components/botones';
 import Tarjeta from './components/Tarjetas';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Main from './components/Main';
+import Galeria from './components/Galeria';
+import Footer from './components/Footer';
 
 function App() {
 
-  let productos = ['producto1', 'producto2', 'producto3'];
 
   return (
     <>
-      <Botones texto='Aceptar' color='green' />
-      <Botones texto='Cancelar' color='red' />
-      <Botones texto='Ver más' color='blue' />
-      <ListaProductos productos={productos} />
+      <Header />
+      <Nav />
+      <Main />
+      <Galeria />
+      <Footer />
     </>
   )
 }
