@@ -1,10 +1,14 @@
 import React from 'react'
+import Header from '../components/estaticos/Header'
+import Footer from '../components/estaticos/Footer'
 
 const Home = () => {
   return (
-    <div>
-        <h1>Home</h1>
-    </div>
+    <>
+      <Header />
+      <h1>Home</h1>
+      <Footer />
+    </>
   )
 }
 

@@ -1,24 +1,30 @@
-import React from 'react';
-import ListaProductos from './components/listaProductos';
-import Botones from './components/botones';
-import Tarjeta from './components/Tarjetas';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Galeria from './components/Galeria';
-import Footer from './components/Footer';
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './estilosGenerales.css';
+import Home from './pages/Home';
+import AcercaDe from './pages/AcercaDe';
+import GaleriaProductos from './pages/GaleriaProductos';
+import Contactos from './pages/Contactos';
+import NotFound from './pages/NotFound';
 
 function App() {
 
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Header />
-      <Nav />
-      <Main />
-      <Galeria />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+
+        <Route path='/tienda' element={<GaleriaProductos/>}/>
+
+        <Route path='/acercade' element={<AcercaDe/>} />
+
+        <Route path='/contacto' element={<Contactos/>}/>
+
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
+    </Router>
   )
 }
 
