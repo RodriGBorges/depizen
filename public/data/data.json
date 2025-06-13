@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pierna Completa",
+    "precio": 80000,
+    "stock": 10,
+    "imagen": "/images/piernas.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 2,
+    "nombre": "Pecho",
+    "precio": 30000,
+    "stock": 15,
+    "imagen": "/images/pecho.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 3,
+    "nombre": "Abdomen",
+    "precio": 20000,
+    "stock": 12,
+    "imagen": "/images/abdomen.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 4,
+    "nombre": "Espalda completa",
+    "precio": 35000,
+    "stock": 8,
+    "imagen": "/images/espalda.jpg",
+    "categoria": "Hombre"
+  }
+]

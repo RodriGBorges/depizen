@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './estilosGenerales.css';
 import Home from './pages/Home';
@@ -9,7 +9,29 @@ import NotFound from './pages/NotFound';
 
 function App() {
 
-  const [count, setCount] = useState(0);
+  const [cart, setCart] = useState(0);
+  const [productos, setProductos] = useState([]);
+  const [cargando, setCargando] = useState(true);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    fetch('/data/data.json')
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+      setTimeout(() => {
+        setProductos(datos);
+        setCargando(false);
+      }, 2000);
+    })
+    .catch(error => {
+      console.log('Error', error);
+      setCargando(false)
+      setError(true)
+    })
+  },[])
+
+  console.log(productos);
+  
 
   return (
     <Router>

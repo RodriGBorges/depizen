@@ -6,7 +6,12 @@ const Home = () => {
   return (
     <>
       <Header />
-      <h1>Home</h1>
+        <main>
+          <h1>Bienvenidos a Depizen</h1>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore voluptate deleniti mollitia illum reprehenderit ullam quae cum perferendis excepturi? Deleniti, reiciendis. Veniam in tempora pariatur delectus vel esse minus laborum?</p>
+          
+        </main>
       <Footer />
     </>
   )
