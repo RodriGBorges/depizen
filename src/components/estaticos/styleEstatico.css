@@ -24,3 +24,16 @@ ul {
     text-align: center;
     margin-top: 20px;
 }
+
+.btnCart {
+    border: none;
+    background-color: transparent;
+}
+
+.fa-cart-shopping {
+    color: white;
+}
+
+.fa-xmark {
+    color: black;
+}

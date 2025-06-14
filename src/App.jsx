@@ -9,7 +9,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
 
-  const [cart, setCart] = useState(0);
+  const [carrito, setCarrito] = useState([]);
   const [productos, setProductos] = useState([]);
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState(false);
@@ -30,19 +30,44 @@ function App() {
     })
   },[])
 
-  console.log(productos);
+  const agregarAlCarrito = (producto) => {
+    const productoExistente = carrito.find(item => item.id === producto.id);
+    if (productoExistente) {
+      setCarrito(carrito.map(item => 
+        item.id === producto.id ? {...item, cantidad: item.cantidad + 1} : item
+      ));
+    } else {
+      setCarrito([...carrito, {...producto, cantidad: 1}]);
+    }
+  }
+
+  const eliminarDelCarrito = (producto) => {
+    setCarrito(prevCart => {
+      return prevCart.map(item => {
+        if (item.id === producto.id) {
+          if (item.cantidad > 1) {
+            return {...item, cantidad: item.cantidad - 1};
+          } else {
+            return null; // Marcar para eliminar
+          }
+        } else {
+          return item; // Mantener el item
+        }
+      }).filter(item => item !== null); // Filtrar los nulos
+    })
+  }
   
 
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home productos={productos} cargando={cargando}/>} />
+        <Route path='/' element={<Home eliminarDelCarrito={eliminarDelCarrito} agregarAlCarrito={agregarAlCarrito} carrito={carrito} productos={productos} cargando={cargando}/>} />
 
-        <Route path='/tienda' element={<GaleriaProductos/>}/>
+        <Route path='/tienda' element={<GaleriaProductos agregarAlCarrito={agregarAlCarrito} eliminarDelCarrito={eliminarDelCarrito} carrito={carrito} productos={productos} cargando={cargando}/>}/>
 
-        <Route path='/acercade' element={<AcercaDe/>} />
+        <Route path='/acercade' element={<AcercaDe carrito={carrito} eliminarDelCarrito={eliminarDelCarrito}/>} />
 
-        <Route path='/contacto' element={<Contactos/>}/>
+        <Route path='/contacto' element={<Contactos carrito={carrito} eliminarDelCarrito={eliminarDelCarrito}/>}/>
 
         <Route path='*' element={<NotFound/>}/>
       </Routes>
