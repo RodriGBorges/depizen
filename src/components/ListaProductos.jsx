@@ -1,18 +1,17 @@
 import React from 'react';
+import Productos from './Productos';
 
-function listaProductos({ productos }) {
+function listaProductos({ productos}) {
   return (
     <>
       <h2>Tienda online</h2>
-      <ol>
+      <div style={{display:'flex', flexWrap: 'wrap', justifyContent:'space-between'}}>
           {
-              productos.map((producto, index) => (
-                  <li key={index}>
-                      {producto}
-                  </li>
+              productos.map((producto) => (
+                  <Productos key={producto.id}producto={producto}/>
               ))
           }
-      </ol>
+      </div>
     </>
   );
 };

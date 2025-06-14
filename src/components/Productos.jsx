@@ -1,8 +1,25 @@
 import React from 'react'
+import './styleProductos.css'
 
-const Productos = () => {
+const Productos = ({producto}) => {
   return (
-    <div>Productos</div>
+    <section className='card'>
+      <div className='imagenContainer'>
+        <img src={producto.imagen} alt="" className='imagen' />
+      </div>
+      <h3 className='nombre'>{producto.nombre}</h3>
+      <p className='precio'>${producto.precio}</p>
+      <p className='stock'>{producto.stock}</p>
+
+      <div className='cantidadContainer'>
+        <button className='qtyButton'>-</button>
+        <span></span>
+        <button className='qtyButton'>+</button>
+      </div>
+
+    <button>Agregar al carrito</button>
+
+      </section>
   )
 }
 

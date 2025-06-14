@@ -4,7 +4,7 @@
     "nombre": "Pierna Completa",
     "precio": 80000,
     "stock": 10,
-    "imagen": "/images/piernas.jpg",
+    "imagen": "/images/piernasM.jpg",
     "categoria": "Mujer"
   },
   {
@@ -12,7 +12,7 @@
     "nombre": "Pecho",
     "precio": 30000,
     "stock": 15,
-    "imagen": "/images/pecho.jpg",
+    "imagen": "/images/pechoH.jpg",
     "categoria": "Hombre"
   },
   {
@@ -20,7 +20,7 @@
     "nombre": "Abdomen",
     "precio": 20000,
     "stock": 12,
-    "imagen": "/images/abdomen.jpg",
+    "imagen": "/images/abdomenM.jpg",
     "categoria": "Mujer"
   },
   {
@@ -28,7 +28,135 @@
     "nombre": "Espalda completa",
     "precio": 35000,
     "stock": 8,
-    "imagen": "/images/espalda.jpg",
+    "imagen": "/images/espaldaH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 5,
+    "nombre": "Abdomen",
+    "precio": 25000,
+    "stock": 10,
+    "imagen": "/images/abdomenH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 6,
+    "nombre": "Axilas",
+    "precio": 10000,
+    "stock": 12,
+    "imagen": "/images/axilasH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 7,
+    "nombre": "Axilas",
+    "precio": 10000,
+    "stock": 12,
+    "imagen": "/images/axilasM.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 8,
+    "nombre": "Brazos",
+    "precio": 20000,
+    "stock": 10,
+    "imagen": "/images/brazosH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 9,
+    "nombre": "Brazos",
+    "precio": 20000,
+    "stock": 10,
+    "imagen": "/images/brazosM.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 10,
+    "nombre": "Espalda",
+    "precio": 28000,
+    "stock": 8,
+    "imagen": "/images/espaldaM.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 11,
+    "nombre": "Glúteos",
+    "precio": 18000,
+    "stock": 10,
+    "imagen": "/images/gluteosM.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 12,
+    "nombre": "Ingle",
+    "precio": 15000,
+    "stock": 5,
+    "imagen": "/images/ingleH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 13,
+    "nombre": "Piernas",
+    "precio": 75000,
+    "stock": 10,
+    "imagen": "/images/piernasH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 14,
+    "nombre": "Pies",
+    "precio": 8000,
+    "stock": 15,
+    "imagen": "/images/piesH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 15,
+    "nombre": "Pies",
+    "precio": 8000,
+    "stock": 15,
+    "imagen": "/images/piesM.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 16,
+    "nombre": "Rostro",
+    "precio": 12000,
+    "stock": 10,
+    "imagen": "/images/rostroH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 17,
+    "nombre": "Rostro",
+    "precio": 12000,
+    "stock": 10,
+    "imagen": "/images/rostroM.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 18,
+    "nombre": "Cavado",
+    "precio": 12000,
+    "stock": 3,
+    "imagen": "/images/cavadoM.jpg",
+    "categoria": "Mujer"
+  },
+  {
+    "id": 19,
+    "nombre": "Gluteos",
+    "precio": 12000,
+    "stock": 8,
+    "imagen": "/images/gluteosH.jpg",
+    "categoria": "Hombre"
+  },
+  {
+    "id": 20,
+    "nombre": "Muslos",
+    "precio": 12000,
+    "stock": 13,
+    "imagen": "/images/muslosH.jpg",
     "categoria": "Hombre"
   }
 ]

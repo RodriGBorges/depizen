@@ -36,7 +36,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Home productos={productos} cargando={cargando}/>} />
 
         <Route path='/tienda' element={<GaleriaProductos/>}/>
 
