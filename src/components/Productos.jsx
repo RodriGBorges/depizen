@@ -9,7 +9,7 @@ const Productos = ({producto}) => {
       </div>
       <h3 className='nombre'>{producto.nombre}</h3>
       <p className='precio'>${producto.precio}</p>
-      <p className='stock'>{producto.stock}</p>
+      <p className='stock'>Turnos disponibles: {producto.stock}</p>
 
       <div className='cantidadContainer'>
         <button className='qtyButton'>-</button>

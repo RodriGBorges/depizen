@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/estaticos/Header'
 import Footer from '../components/estaticos/Footer'
 import ListaProductos from '../components/listaProductos'
-import loading from '../assets/watermelon-seeds.gif'
+import loading from '../assets/cargando.gif'
 
 const Home = ({productos, cargando}) => {
   return (
